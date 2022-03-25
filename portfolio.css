@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:Verdana;
+  background-color: #1A1A1A;
+}
+
+/*navbar starts*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color:black;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 40px 1%;
+  position: relative;
+}
+.navbar h1{
+  font-family:Verdana;
+  color: #FF0031;
+  margin-top: 0px;
+  margin-right: 60%;
+  padding: 5px 15px;
+  font-size: 25px;
+  background-color: black;
+}
+/*navbar ends*/
+
+.all {
+  overflow:auto
+}
+
+/*menu starts*/
+.menu {
+  float: left;
+  width: 15%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #797979;
+}
+.menuitem a {
+  /* font-family: Segoe UI; */
+  color: white;
+  text-decoration: none;
+}
+/*menu ends*/
+
+/*main content starts*/
+.main {
+  float: left;
+  width: 70%;
+  padding: 15px 30px 0px 30px;
+  overflow: hidden;
+}
+.about h2 {
+  padding: 0px 0px 15px;
+  color: #FF343C;
+}
+.about p {
+  color: #BFBFBF;
+}
+.about img {
+  width:415px; 
+  height:415px;
+  padding: 30px;
+}
+.whatido h3 {
+  color: #FF343C;
+  padding: 0px 0px 15px;
+}
+.front-end {
+  float: left;
+  width: 50%;
+}
+.front-end h4 {
+  color: #BFBFBF;
+  padding: 0px 0px 10px;
+}
+.front-end p {
+  color: #BFBFBF;
+}
+.back-end {
+  float: right;
+  width: 50%;
+}
+.back-end h4 {
+  color: #BFBFBF;
+  padding: 0px 0px 10px;
+}
+.back-end p {
+  color: #BFBFBF;
+}
+/*main content ends*/
+
+/*skills section starts*/
+.skills {
+  background-color: #00D293;
+  float: right;
+  width: 15%;
+  padding: 10px 30px;
+  margin-top: 7px;
+}
+/*skills section ends*/
+
+/*footer starts*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #999999;
+  text-align: center;
+}
+/*footer ends*/
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .skills {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .skills {
+    width: 100%;
+  }
+}
